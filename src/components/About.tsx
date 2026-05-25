@@ -13,13 +13,17 @@ export default function About() {
             Sobre a {siteConfig.company.name}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            {siteConfig.company.description}
+            A Ô Sabor nasceu para facilitar o dia a dia de quem quer consumir ou vender
+            sucos de qualidade, com sabor de fruta de verdade.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Selecionamos frutas, processamos com cuidado e congelamos rapidamente para
+            preservar sabor, cor e qualidade. Nossas polpas são práticas, naturais e
+            ideais para famílias, restaurantes, lanchonetes, bares e sorveterias.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Acreditamos que alimentação saudável começa com ingredientes de qualidade.
-            Por isso, selecionamos cada fruta com cuidado, processamos com higiene e
-            congelamos imediatamente para preservar tudo que a natureza criou — sabor,
-            cor, aroma e nutrientes.
+            Com embalagens de 400g e 1kg, você tem mais praticidade, menos desperdício
+            e sempre uma opção saudável pronta para usar.
           </p>
           <div className="flex flex-wrap gap-6">
             <div className="text-center">
