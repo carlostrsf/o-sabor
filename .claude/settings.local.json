@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Remove-Item *)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(cd \"C:\\\\Users\\\\c_rob\\\\OneDrive\\\\Área de Trabalho\\\\PROJETOS\\\\O SABOR_PRO\\\\o-sabor\"; Start-Process -FilePath \"powershell.exe\" -ArgumentList \"-NoExit\",\"-Command\",\"cd 'C:\\\\Users\\\\c_rob\\\\OneDrive\\\\Área de Trabalho\\\\PROJETOS\\\\O SABOR_PRO\\\\o-sabor'; npm run dev\" -WindowStyle Normal; Write-Output \"Servidor iniciado em janela separada\")",
+      "PowerShell(Start-Sleep -Seconds 8; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 5; \"OK: $\\($r.StatusCode\\)\" } catch { \"Aguardando...\" })",
+      "PowerShell(Start-Sleep -Seconds 10; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 5; \"OK: $\\($r.StatusCode\\)\" } catch { \"Servidor ainda não respondeu em localhost:3000\" })",
+      "Read(//mnt/c/Users/c_rob/OneDrive/Área de Trabalho/PROJETOS/O SABOR_PRO/**)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "PowerShell(Receive-Job *)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\c_rob\\\\OneDrive\\\\Área de Trabalho\\\\PROJETOS\\\\O SABOR_PRO\\\\o-sabor\\\\public\\\\images\\\\brand\\\\logo.png\"\\); \"Dimensões: $\\($img.Width\\) x $\\($img.Height\\) px\"; $img.Dispose\\(\\))",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\Users\\\\c_rob\\\\OneDrive\\\\Área de Trabalho\\\\PROJETOS\\\\O SABOR_PRO\\\\o-sabor\\\\public\\\\faviconosabor.png\"\\); \"Dimensões: $\\($img.Width\\) x $\\($img.Height\\) px\"; $img.Dispose\\(\\))",
+      "mcp__plugin_supabase_supabase__list_tables",
+      "mcp__plugin_supabase_supabase__apply_migration",
+      "mcp__plugin_supabase_supabase__execute_sql",
+      "Bash(node *)",
+      "PowerShell(gh auth *)"
+    ]
+  }
+}
