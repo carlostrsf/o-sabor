@@ -36,9 +36,8 @@ export default function Hero() {
             {siteConfig.company.slogan}
           </p>
           <p className="text-base md:text-lg mb-8 opacity-85 max-w-lg">
-            Polpas de frutas congeladas com qualidade premium para famílias e empresas em{" "}
-            <strong>{siteConfig.company.location}</strong>.
-            10 sabores disponíveis em 400g e 1kg.
+            Polpas naturais congeladas para quem quer praticidade sem abrir mão da qualidade.
+            Ideal para sua casa, restaurante, lanchonete ou sorveteria.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3">
