@@ -18,7 +18,8 @@ export default function Footer() {
             style={{ height: "72px", width: "auto", marginBottom: "12px" }}
           />
           <p className="text-sm leading-relaxed opacity-75">
-            Polpas de frutas naturais congeladas para famílias e empresas.
+            Ô Sabor — polpas naturais para famílias e empresas que querem
+            praticidade, qualidade e sabor da fruta de verdade.
           </p>
         </div>
 
