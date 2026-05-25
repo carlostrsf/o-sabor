@@ -2,6 +2,7 @@ import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { whatsappDefault } from "@/lib/whatsapp";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+import HeroCarousel from "@/components/HeroCarousel";
 
 export default function Hero() {
   return (
@@ -19,45 +20,53 @@ export default function Hero() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-16 relative z-10 text-white">
-        <div className="max-w-2xl">
-          <span className="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
-            🌿 100% Natural · Sem Conservantes
-          </span>
-          <h1 className="mb-4">
-            <Image
-              src="/images/brand/nome-osabor.svg"
-              alt="Ô Sabor"
-              width={320}
-              height={100}
-              priority
-            />
-          </h1>
-          <p className="text-xl md:text-2xl mb-4 font-medium opacity-95">
-            {siteConfig.company.slogan}
-          </p>
-          <p className="text-base md:text-lg mb-8 opacity-85 max-w-lg">
-            Polpas naturais congeladas para quem quer praticidade sem abrir mão da qualidade.
-            Ideal para sua casa, restaurante, lanchonete ou sorveteria.
-          </p>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          {/* Coluna esquerda — texto */}
+          <div>
+            <span className="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              🌿 100% Natural · Sem Conservantes
+            </span>
+            <h1 className="mb-4">
+              <Image
+                src="/images/brand/nome-osabor.svg"
+                alt="Ô Sabor"
+                width={320}
+                height={100}
+                priority
+              />
+            </h1>
+            <p className="text-xl md:text-2xl mb-4 font-medium opacity-95">
+              {siteConfig.company.slogan}
+            </p>
+            <p className="text-base md:text-lg mb-8 opacity-85 max-w-lg">
+              Polpas naturais congeladas para quem quer praticidade sem abrir mão da qualidade.
+              Ideal para sua casa, restaurante, lanchonete ou sorveteria.
+            </p>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href={whatsappDefault()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600
-                         text-white font-bold px-6 py-3 rounded-full text-base transition-colors shadow-lg"
-            >
-              <WhatsAppIcon size={20} />
-              Pedir pelo WhatsApp
-            </a>
-            <a
-              href="#produtos"
-              className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30
-                         text-white font-semibold px-6 py-3 rounded-full text-base transition-colors border border-white/30"
-            >
-              Ver Catálogo 🍹
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href={whatsappDefault()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600
+                           text-white font-bold px-6 py-3 rounded-full text-base transition-colors shadow-lg"
+              >
+                <WhatsAppIcon size={20} />
+                Pedir pelo WhatsApp
+              </a>
+              <a
+                href="#produtos"
+                className="inline-flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30
+                           text-white font-semibold px-6 py-3 rounded-full text-base transition-colors border border-white/30"
+              >
+                Ver Catálogo 🍹
+              </a>
+            </div>
+          </div>
+
+          {/* Coluna direita — carrossel de sabores */}
+          <div className="flex justify-center md:justify-end">
+            <HeroCarousel />
           </div>
         </div>
       </div>
