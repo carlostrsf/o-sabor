@@ -28,7 +28,7 @@ export const siteConfig = {
   },
 
   images: {
-    company: "/images/company/historia.png",
+    company: "/images/company/imagem_secaohistorianew.png",
     gallery: [] as string[],
   },
 
